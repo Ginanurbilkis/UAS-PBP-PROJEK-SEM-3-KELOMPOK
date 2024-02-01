@@ -1,0 +1,96 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "firman",
+  "password" : "rahasia",
+  "name" : "firman anugrah"
+}
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "firman",
+  "password" : "rahasia"
+}
+
+###
+
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 2b632032-8167-4792-bb1f-d07534a9c534
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: c4f7e677-34b1-41ed-a28d-c941d34d70aa
+
+{
+  "name" : "firmananugrah"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: c4f7e677-34b1-41ed-a28d-c941d34d70aa
+
+###
+
+POST http://localhost:3000/api/raossundas
+Content-Type: application/json
+Accept: application/json
+Authorization: 818bfed0-d5f5-48bd-b1c8-56b90dd73c24
+
+{
+  "makanan" : "iga bakar",
+  "minuman" : "jus mangga",
+  "paket_murah" : "paket keluarga 1",
+  "Jumlah" : "32022",
+  "harga" : "324234"
+}
+
+###
+
+GET http://localhost:3000/api/raossundas
+Content-Type: application/json
+Accept: application/json
+Authorization: 87097946-ee49-4521-8f23-9a9958c81170
+
+###
+
+GET http://localhost:3000/api/raossundas/??
+Content-Type: application/json
+Accept: application/json
+Authorization: 19dfc22d-4545-45a9-9b36-ec0fc3fee291
+
+### Update
+
+PUT http://localhost:3000/api/raossundas/??
+Content-Type: application/json
+Accept: application/json
+Authorization: 19dfc22d-4545-45a9-9b36-ec0fc3fee291
+
+{
+  "makanan" : "iga bakar",
+  "minuman" : "jus mangga",
+  "paket_murah" : "paket keluarga 2",
+  "Jumlah" : "32022",
+  "harga" : "324234"
+}
+
+### Delete Contact
+
+DELETE http://localhost:3000/api/raossundas/??
+Content-Type: application/json
+Accept: application/json
+Authorization: 19dfc22d-4545-45a9-9b36-ec0fc3fee291
